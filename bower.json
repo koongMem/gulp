@@ -1,0 +1,38 @@
+{
+    "name": "bower",
+    "version": "0.1.0",
+    "dependencies": {
+        "superLib": "http://192.168.0.30:81/frontend/libary-mobile.git",
+        "jsuper": "http://192.168.0.30:81/frontend/SuperBrowserLibs.git",
+        "amfe-flexible": "git@github.com:amfe/lib-flexible.git#2.0",
+        "lodash": "latest"
+    },
+    "devDependencies": {},
+    "install": {
+        "path": "common/statics/vendors",
+        "options": {
+            "includePackageNameInInstallPath": false
+        },
+        "sources": {
+            "jsuper": "bower_components/jsuper/dist/jsuperV2.js",
+            "superLib": "bower_components/superLib/dist/sunny.js",
+            "amfe-flexible": {
+                "mapping": [
+                    {
+                        "bower_components/amfe-flexible/index.min.js": "flexible.js"
+                    }
+                ]
+            }
+        }
+    },
+    "group": {
+        "flexible": [
+            "amfe-flexible"
+        ]
+    },
+    "overrides": {
+        "amfe-flexible": {
+            "main": "index.js"
+        }
+    }
+}

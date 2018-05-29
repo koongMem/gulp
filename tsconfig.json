@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "target": "es3",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "removeComments": true,
+        "typeRoots": [],
+        "lib": [
+            "ES5",
+            "ES2015",
+            "DOM",
+            "ScriptHost"
+        ],
+        "allowJs": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
